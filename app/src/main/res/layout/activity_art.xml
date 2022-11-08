@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtActivity"
+    android:background="@color/black"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+        android:onClick="selectImage"
+        android:id="@+id/imageView"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/select" />
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/artNameText"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:hint="Art Name"/>
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/artistNameText"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:hint="Artist Name" />
+
+        <EditText
+            android:textStyle="bold"
+            android:id="@+id/yearText2"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:hint="Year" />
+
+        <Button
+            android:onClick="saveButtonClick"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            />
+    </LinearLayout>
+
+</LinearLayout>
